@@ -7,3 +7,5 @@ variations: classical HuaRong-Dao, a variant of Rush Hour, and the 15 puzzle.
 
 Demo 2: [Flip](invert.html?remote=false), where you have to flip tiles to clear the pattern.
 There are two similar games with different rules.
+
+Demo 3: [TMDB](tmdb-demo.html?remote=false), which shows information the "The Movie Database".

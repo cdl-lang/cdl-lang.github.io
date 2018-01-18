@@ -1,18 +1,18 @@
 var fmtVersion = 2.3;
 
 // debuginfo=0 optimize=true errors= xflags= strictness=
-// start 0.01 s
+// start 0.009 s
 // nr PathTreeNodes 1715
 // multiple paths 482
 // load js 0.069 s
 // warning: unused classes: ::DraggableInContainer, ::DraggableInContainerHandle, ::DraggableHandle, ::DraggableEdge, ::HorizontalResizingDraggableEdge, ::VerticalResizingDraggableEdge, ::HorizontalSpacingHandle, ::VerticalSpacingHandle, ::DraggableEdgeLeft, ::DraggableEdgeRight, ::DraggableEdgeTop, ::DraggableEdgeBottom, ::DraggableCornerBottomRight, ::DraggableCornerBottomLeft, ::DragWrapper, ::Font, ::AnimateTopLeft, ::AnimateArea, ::MenuText, ::Badge, ::MarkArea, ::NonAreaSetWithScrollBar, ::EditButton, ::CloseButton, ::DeleteButton, ::ActionButton, ::LeftOfLabel, ::RightOfLabel, ::AboveSibling, ::HorizontalAlignWithSibling, ::VerticalAlignWithSibling, ::BelowSiblings, ::AlignLeftWithSibling, ::AlignBottomWithSibling, ::AlignHorizontalCenterWithSibling, ::AlignVerticalCenterWithSibling, ::AlignParentBottomWithTallestChild, ::FlipButton, ::TextValueInput, ::BlockEvents, ::ModalLayer, ::ChoiceButton, ::RemoteConnectionStateIndicator, ::TextLabel14Px, ::TextLabel20PxOnBackground, ::UnderlinedTextLabel14Px, ::UnderlinedTextLabel20Px, ::FocusRingContext, ::FocusRing, ::GuaranteeImmediateVisibility, ::OpenURLOnClick, ::StretchedList, ::AutoSizeFixedMatrix
-// remove qualifiers 0.067 s
-// create template tree 0.017 s
-// cycle 1 0.008 s
-// cycle 2 0.327 s
-// cycle 3 0.056 s
-// cycle 4 0.041 s
-// end 0.045 s
+// remove qualifiers 0.062 s
+// create template tree 0.014 s
+// cycle 1 0.007 s
+// cycle 2 0.34 s
+// cycle 3 0.069 s
+// cycle 4 0.047 s
+// end 0.044 s
 var globalMessageNodeIndex = 0
 var pointerNodeIndex = 1
 var nrExports = 9
@@ -77,7 +77,7 @@ _sp(0, 1) // %49G
 _f(1, 0, greaterThan, [_n(undefined,49), _n(undefined,12)])
 _sp(0, 1) // %50G
 _v([{type: ["MouseDown", "Wheel"]}], undefined) // %51G
-_v({image: {src: "icons/flip-logo.png", size: "100%"}}, false) // %52G
+_v({image: {src: "image/flip-logo.png", size: "100%"}}, false) // %52G
 _a(0, 0, {Intro:_n(undefined,26), LTRContainer:_n(undefined,26)}, false) // %53G
 _v("right", true) // %54G
 _f(0, 0, empty, [_n(undefined,2)]) // %55G
@@ -2129,5 +2129,5 @@ _aw(47, "onClickableMouseDown", _n(0,9), undefined, {selected:_tm(_n(0,10), _n(0
 _aw(47, "onClickableMouseUp", _n(0,12), undefined, {selected:_tm(_n(0,13), _n(0,14), 5)}, undefined, undefined, 4)
 _mss(0, 30)
 _mss(1, 27)
-// compile time: 0.707 s
+// compile time: 0.735 s
 // nr wont change: 726

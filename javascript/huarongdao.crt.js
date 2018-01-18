@@ -1,12 +1,12 @@
 var fmtVersion = 2.3;
 
 // debuginfo=0 optimize=true errors= xflags= strictness=
-// start 0.01 s
+// start 0.011 s
 // nr PathTreeNodes 2595
 // multiple paths 539
-// load js 0.074 s
-// warning: unused classes: ::DraggableInContainer, ::DraggableInContainerHandle, ::DraggableHandle, ::DraggableEdge, ::HorizontalResizingDraggableEdge, ::VerticalResizingDraggableEdge, ::HorizontalSpacingHandle, ::VerticalSpacingHandle, ::DraggableEdgeLeft, ::DraggableEdgeRight, ::DraggableEdgeTop, ::DraggableEdgeBottom, ::DraggableCornerBottomRight, ::DraggableCornerBottomLeft, ::DragWrapper, ::UniformItemScrolledDocument, ::NonUniformItemScrolledDocument, ::IndexedItemScrolledDocument, ::Font, ::AnimateTopLeft, ::AnimateArea, ::MenuText, ::Badge, ::MarkArea, ::BasicListInArea, ::BasicListInAreaWithScrollbar, ::NonAreaSetWithScrollBar, ::BasicScrollBar, ::BasicVScrollBar, ::BasicHScrollBar, ::BasicScrollBarThumb, ::BasicVScrollBarThumb, ::BasicHScrollBarThumb, ::EditButton, ::CloseButton, ::DeleteButton, ::ActionButton, ::LeftOfLabel, ::RightOfLabel, ::ZAboveSiblings, ::AboveSibling, ::VerticalAlignWithSibling, ::BelowSiblings, ::AlignHorizontalCenterWithSibling, ::AlignVerticalCenterWithSibling, ::TextValueInput, ::ModalLayer, ::ChoiceButton, ::RemoteConnectionStateIndicator, ::TextLabel14Px, ::TextLabel20PxOnBackground, ::UnderlinedTextLabel14Px, ::UnderlinedTextLabel20Px, ::FocusRingContext, ::FocusRing, ::GuaranteeImmediateVisibility, ::OpenURLOnClick, ::StretchedList, ::WheelScroll, ::AutoSizeFixedMatrix, ::AreaWithPopUpAlignedToSideContext, ::AreaWithPopUpAlignedToSide
-// remove qualifiers 0.056 s
+// load js 0.08 s
+// warning: unused classes: ::DraggableInContainer, ::DraggableInContainerHandle, ::DraggableHandle, ::DraggableEdge, ::HorizontalResizingDraggableEdge, ::VerticalResizingDraggableEdge, ::HorizontalSpacingHandle, ::VerticalSpacingHandle, ::DraggableEdgeLeft, ::DraggableEdgeRight, ::DraggableEdgeTop, ::DraggableEdgeBottom, ::DraggableCornerBottomRight, ::DraggableCornerBottomLeft, ::DragWrapper, ::UniformItemScrolledDocument, ::NonUniformItemScrolledDocument, ::IndexedItemScrolledDocument, ::Font, ::AnimateTopLeft, ::AnimateArea, ::MenuText, ::Badge, ::MarkArea, ::BasicListInArea, ::BasicListInAreaWithScrollbar, ::NonAreaSetWithScrollBar, ::BasicScrollBar, ::BasicVScrollBar, ::BasicHScrollBar, ::BasicScrollBarThumb, ::BasicVScrollBarThumb, ::BasicHScrollBarThumb, ::EditButton, ::CloseButton, ::DeleteButton, ::ActionButton, ::LeftOfLabel, ::RightOfLabel, ::ZAboveSiblings, ::AboveSibling, ::VerticalAlignWithSibling, ::BelowSiblings, ::AlignHorizontalCenterWithSibling, ::AlignVerticalCenterWithSibling, ::AlignParentBottomWithTallestChild, ::TextValueInput, ::ModalLayer, ::ChoiceButton, ::RemoteConnectionStateIndicator, ::TextLabel14Px, ::TextLabel20PxOnBackground, ::UnderlinedTextLabel14Px, ::UnderlinedTextLabel20Px, ::FocusRingContext, ::FocusRing, ::GuaranteeImmediateVisibility, ::OpenURLOnClick, ::StretchedList, ::WheelScroll, ::AutoSizeFixedMatrix, ::AreaWithPopUpAlignedToSideContext, ::AreaWithPopUpAlignedToSide
+// remove qualifiers 0.06 s
 // create template tree 0.008 s
 // cycle 1 0.004 s
 // warning: write without upon: onInitialPosition at app.initial.configuration.blocks.write.onInitialPosition
@@ -24,9 +24,9 @@ var fmtVersion = 2.3;
 // warning: write without upon: cursorStartOffsetChanged at app.history.scrollbar.write.cursorStartOffsetChanged
 // warning: context.scrollbarCursorLeftMargin is undefined in template 23 at position.left in class ::VerticalScrollbarCursorBasicDesign for qualifiers {}
 // warning: context.scrollbarCursorRightMargin is undefined in template 23 at position.right in class ::VerticalScrollbarCursorBasicDesign for qualifiers {}
-// cycle 2 0.136 s
-// cycle 3 0.057 s
-// end 0.049 s
+// cycle 2 0.141 s
+// cycle 3 0.068 s
+// end 0.063 s
 var globalMessageNodeIndex = 0
 var pointerNodeIndex = 1
 var nrExports = 23
@@ -441,7 +441,7 @@ _m(3, 0, _n(undefined,72), [_n(undefined,10), _n(0,31), _n(undefined,9)]) // %34
 _a(4, 0, {point1:_nf(0,34), point2:_n(undefined,76), equals:_n(undefined,75)}, false) // %35L3
 _cnp({"HuaRongDaoWithLabel":1,"HighLightOnHover":2,"FlipButton":3,"DepressWhileMouseDown":4,"Clickable":5,"AreaWithPopUpInPositioningPoints":6,"AreaWithPopUp":7,"AreaWithPopUpContext":8})
 _acc(3, {"popup":{data:undefined,partner:_n(0,4)}})
-_ae(3, _n(0,11), {top:_n(1,16), left:_n(1,18), width:_n(0,16), height:_n(1,24)}, undefined, {"0":_n(undefined,20)}) // area template expr 3
+_ae(3, _n(0,11), {top:_n(1,16), right:_n(1,18), width:_n(0,16), height:_n(1,24)}, undefined, {"0":_n(undefined,20)}) // area template expr 3
 _aw(3, "onClick", _n(0,17), undefined, {switchValue:_tm(_n(0,2), _n(0,18), 3)}, undefined, undefined, 2)
 _aw(3, "onClickableMouseDown", _n(0,21), undefined, {selected:_tm(_n(0,22), _n(0,23), 5)}, undefined, undefined, 4)
 _aw(3, "onClickableMouseUp", _n(0,24), undefined, {selected:_tm(_n(0,25), _n(0,26), 5)}, undefined, undefined, 4)
@@ -1417,5 +1417,5 @@ _aw(29, "onClickableMouseDown", _n(0,14), undefined, {selected:_tm(_n(0,15), _n(
 _aw(29, "onClickableMouseUp", _n(0,18), undefined, {selected:_tm(_n(0,19), _n(0,20), 5)}, undefined, undefined, 4)
 _mss(0, 25)
 _mss(1, 15)
-// compile time: 0.457 s
+// compile time: 0.5 s
 // nr wont change: 334

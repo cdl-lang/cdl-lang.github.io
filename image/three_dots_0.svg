@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 86 20"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="10.00" cy="10.00" rx="10.00" ry="10.00"
+                fill="rgba(230, 230, 35, 1.00)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="43.00" cy="10.00" rx="10.00" ry="10.00"
+                fill="rgba(20, 205, 205, 1.00)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="76.00" cy="10.00" rx="10.00" ry="10.00"
+                fill="rgba(230, 35, 230, 1.00)"
+                />
+            
+        </g>
+        
+    </g>
+</svg>
+

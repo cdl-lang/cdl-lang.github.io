@@ -20,18 +20,35 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
 
     <script type="text/javascript">
-        var mondriaStartDate = new Date();
+
+        var remoteServerPort_repl = "!PERSISTENCE_SERVER_PORT!";
+        var wwwBaseUrlPath_repl = "!WWW_BASE_URL_PATH!";
+        var appStateOwner_repl = "!PROFILE_MGT_OWNER!";
         var profileParameters_str = "!PROFILE_APP_PARAMETERS!";
         var packageParameters_str = "!PACKAGE_APP_PARAMETERS!";
-    </script>
+        var wwwBaseUrlPath = typeof(wwwBaseUrlPath_repl) === "string" &&
+                            wwwBaseUrlPath_repl[0] != "!" ?
+                            wwwBaseUrlPath_repl: undefined;
+        var remoteServerPath = undefined;
+        if (remoteServerPort_repl[0] === "@" && wwwBaseUrlPath !== undefined) {
+            remoteServerPath = wwwBaseUrlPath + "/pserver/";
+            remoteServerPort_repl = remoteServerPort_repl.slice(1);
+        }
+        var remoteServerPort = isNaN(remoteServerPort_repl)? undefined:
+                               Number(remoteServerPort_repl);
+        var appStateOwner = typeof(appStateOwner_repl) === "string" &&
+                              appStateOwner_repl[0] !== "!"?
+                            appStateOwner_repl : undefined;
 
-    <script type="text/javascript">
+        var mondriaStartDate = new Date();
+
         window.onload = mondriaOnloadInitializations;
         function mondriaOnloadInitializations() {
+            RemoteMgr.appName = "invert";
             mondriaOnLoadDate = new Date();
             console.log('Time to onload =', (mondriaOnLoadDate.getTime() - mondriaStartDate.getTime()) + 'ms');
             initializeModeDetection();
-            main();
+            cdlMain();
         }
     </script>
 
@@ -43,20 +60,20 @@
 
     <div id="mondriaSplashScreenBackground" style="background-color:#efefef; top: 0px; left: 0px; width: 100%; height: 100%; z-index:2000000002;">
         <div id="mondriaSplashScreenDiv" style="position: absolute; margin: auto; top: 0; right: 0; bottom: 0; left: 0; z-index:2000000002; width:250px; height: 250px; text-align: center;">
-            <img id="mondriaSplashScreenLogo" src="image/cdl-logo.svg" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;">
+            <img id="mondriaSplashScreenLogo" src="resources/images/cdl-logo.svg" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;">
             <span id="mondriaSplashScreenText" style="font-family:Roboto; color:darkgray; position:absolute; top:80%; transform: translateX(-50%);">Loading scripts</span>
-            <img id="mondriaSplashScreenDots" src="image/three_dots.svg" style="position: absolute; top: 65%; transform: translateX(-50%); width: 20%; height: 20%;">
-            <!-- image/three_dots_0.svg -->
-            <!-- image/three_dots_1.svg -->
-            <!-- image/three_dots_2.svg -->
-            <!-- image/three_dots_3.svg -->
+            <img id="mondriaSplashScreenDots" src="resources/images/three_dots.svg" style="position: absolute; top: 65%; transform: translateX(-50%); width: 20%; height: 20%;">
+            <!-- resources/images/three_dots_0.svg -->
+            <!-- resources/images/three_dots_1.svg -->
+            <!-- resources/images/three_dots_2.svg -->
+            <!-- resources/images/three_dots_3.svg -->
         </div>
     </div>
 
     <script src="javascript/common_runtime.min.js"></script>
 
     <div id="mondriaTaskRunningDiv" hidden=true style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index:2000000001; background-color: #e0e0e8; transition: opacity 4s;">
-        <img id="mondriaTaskSpinnerElt" src="image/hourglass.svg" style="position: absolute; top: 45%; left: 45%; width: 50px; height: 50px;">
+        <img id="mondriaTaskSpinnerElt" src="resources/images/hourglass.svg" style="position: absolute; top: 45%; left: 45%; width: 50px; height: 50px;">
     </div>
 
 	<script src="javascript/invert.crt.js"></script>
